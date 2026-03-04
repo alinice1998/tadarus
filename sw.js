@@ -141,7 +141,7 @@ self.addEventListener('push', (event) => {
 
     const data = event.data.json();
     event.waitUntil(
-        self.registration.showNotification(data.title || 'تدارس', {
+        self.registration.showNotification(data.title || 'الحلقات الأسرية', {
             body: data.body || 'لديك تحديث جديد',
             icon: 'icons/icon-192.png',
             badge: 'icons/icon-192.png',
